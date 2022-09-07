@@ -44,28 +44,29 @@
 
 <body>
 <div style="margin-left: 10%; margin-right: 10%;">
-<label for="basic-url" class="form-label">Your vanity URL</label>
+<label for="basic-url" class="form-label">Ваше Імя</label>
 <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+  <span class="input-group-text" id="basic-addon3">name</span>
   <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 </div>
-   <label for="basic-url" class="form-label">Your vanity URL</label>
+   <label for="basic-url" class="form-label">Ваш електронний адрес</label>
 <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+  <span class="input-group-text" id="basic-addon3">email</span>
   <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
 </div>
    </div>
 </body>
 
 <script>
+   tg.MainButton.show()
    let tg = window.Telegram.WebApp; //получаем объект webapp телеграма 
 
    tg.expand(); //расширяем на все окно  
 
-   tg.MainButton.text = "Changed Text"; //изменяем текст кнопки 
+   tg.MainButton.text = "Зареєструватися"; //изменяем текст кнопки 
    tg.MainButton.setText("Changed Text1"); //изменяем текст кнопки иначе
-   tg.MainButton.textColor = "#F55353"; //изменяем цвет текста кнопки
-   tg.MainButton.color = "#143F6B"; //изменяем цвет бэкграунда кнопки
+   tg.MainButton.textColor = "#FFFFFF"; //изменяем цвет текста кнопки
+   tg.MainButton.color = "#000000"; //изменяем цвет бэкграунда кнопки
    tg.MainButton.setParams({"color": "#143F6B"}); //так изменяются все параметры
 
    let btn = document.getElementById("btn"); //получаем кнопку скрыть/показать 
